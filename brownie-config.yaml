@@ -1,0 +1,17 @@
+dotenv: .env
+wallets:
+    from_key: ${PRIVATE_KEY}
+
+compiler:
+  solc:
+    version: "0.8.28"
+    optimizer:
+      enabled: true
+      runs: 200
+
+networks:
+    sepolia:
+      chainid: 11155111
+      eth_usd_price_feed: "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+      verify: True
+      explorer: https://api-sepolia.etherscan.io/
